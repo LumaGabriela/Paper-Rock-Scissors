@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+html{
+    display: block;
+    width:100%; 
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    flex-direction:column;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    font-family: 'Varela Round', sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content:flex-start;
+    background: linear-gradient(10deg,#020202 5%,rgb(105, 28, 0) 80%);
+    background-attachment: fixed;
+    color:cornsilk;
+}
+
+body h1{
+    margin: 0px;
+    padding:20px 15px;
+    width: 100%;
+    text-align: center;
+    background-color: cornsilk;
+    color: rgb(105, 28, 0);
+}
+#selections {
+    padding:10px 15px;
+    margin:10px;
+    font-size:1.4rem;
+}
+.score{
+    justify-content: center;
+    display: flex;
+    width:100%;
+    padding:20px 5px;
+    font-size:1.2rem;
+}
+.player{
+    padding:10px 5px;
+    width:50%;
+    border-right: 3px solid cornsilk;
+    text-align: center;
+}
+.computer{
+    padding:10px 5px;
+    width:50%;
+    text-align: center;
+}
+.game{
+    width:100%;
+    margin:0;
+    padding:5px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 150px;
+    border-radius:10%;
+    border:5px solid cornsilk;
+    background: cornsilk;
+    cursor:pointer;
+    outline: none;
+    margin:10px 5px;
+    transition: filter .2s ease-out;
+}
+.img:hover{
+    filter: opacity(.9) drop-shadow(0 0 5px white) ;
+}
+.img.selected {
+    border-color:orangered;
+    background-color:orangered;
+    box-shadow: orangered 0 0 15px;  
+}
+.img.selected1 {
+    border-color:rgb(0, 255, 128);
+    background-color:rgb(0, 255, 128);
+    box-shadow: rgb(0, 255, 128) 0 0 15px;
+}
+.img.selected2 {
+    border-color:rgb(255, 166, 0);
+    background-color:rgb(255, 166, 0);
+    box-shadow:rgb(255, 166, 0)  0 0 15px;
+}
+.footer{
+    display: flex;
+    margin:auto 0 0;
+    justify-content: flex-end;
+}
+.footer-link{
+    color:cornsilk;
+    font-size: .94rem;
+    text-decoration:none;
+}
+.play-again{
+    z-index:3;
+    background: rgba(0, 0, 0, 0.45);
+    display: none;
+    position:fixed;
+    height:100%;
+    width:100%;
+    padding:210px 0;
+}
+
+.play-again-content{
+    border:2px solid cornsilk;
+    box-shadow:0 0 13px black;
+    padding:15px;
+    margin:0 auto;
+    max-width:80%;
+    background:#222222;
+    color:cornsilk;
+    border-radius:10px;
+    animation: modalmenu .5s ease-out;
+}
+@keyframes modalmenu{
+    0%{
+        transform: scaleX(.5) scaleY(.5);
+    }
+    100%{
+        transform: scaleY(1) scaleX(1);
+    }
+}
+.restart {
+    padding:5px 10px;
+    font-family: inherit;
+    background: cornsilk;
+    border: 2px solid #222222;
+    border-radius:5px;
+    color:#222222;
+    width: 100%;
+    font-size: 1.2rem;
+    transition:background .3s ease-out,border-color .3s ease-out;
+    cursor: pointer;
+}
+.restart:hover{
+    background:#222222;
+    color: cornsilk;
+    border-color:cornsilk;
+}

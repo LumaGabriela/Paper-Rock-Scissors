@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Paper Rock Scissors/style.css">
+    <script src="https://kit.fontawesome.com/407028fd30.js" crossorigin="anonymous"></script>
+    <title>Papper Rock Scissor</title>
+</head>
+<body>
+    <h1>PAPPER ROCK SCISSORS</h1>
+    <h4 id="selections">Press to play</h4>
+    <div class="score">
+        <div class="player">Player = 0</div>
+        <div class="computer">Computer = 0</div>
+    </div>
+    <div class="play-again">
+        <div class="play-again-content">
+            <h2>Do you want to play again?</h2>
+            <button class="restart" type="button" value="Restart">Restart</button>
+        </div>
+    </div>
+    <main class="game">
+        <img src="./images/papper.png" class="img papepr" height="150px">
+        <img src="./images/rock.jpg" class="img rock" height="150px">
+        <img src="./images/scissors.png" class="img scissors" height="150px">
+        <audio  id='clickAudio'>
+            <source src="../Paper Rock Scissors/sounds/clickSound.mp3" type='audio/mp3'>
+        </audio>
+        <audio id="winGameAudio">
+            <source src="../Paper Rock Scissors/sounds/winGameSound.mp3" type='audio/mp3' >
+        </audio>
+        <audio id="loseGameAudio" type='audio/mp3'>
+            <source src="../Paper Rock Scissors/sounds/loseGameSound.mp3">
+        </audio>
+    </main>
+    <footer class="footer">
+        <p><a class="footer-link" target="_blank" href="https://github.com/LumaGabriela/Projects/tree/main/Paper%20Rock%20Scissors">Copyright &copy; 2021 LumaGabriela <i class="fab fa-github"></i></a></p>
+    </footer>
+</body>
+<script src="../Paper Rock Scissors/script.js"></script>
+</html>
